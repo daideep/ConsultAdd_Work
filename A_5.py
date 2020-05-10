@@ -1,37 +1,36 @@
-#TASK FIVE: FILE HANDLING AND EXCEPTION HANDLING
+l = [1, 2, 3, 3, 4, 5, 2, 1]
 
-# l = [1, 2, 3, 3, 4, 5, 2, 1]
-#
-# new = []
-#
-# for i in l:
-#     if i not in new:
-#         new.append(i)
-#     else:
-#         break
-#
-# print(new)
+new = []
 
+for i in l:
+    if i not in new:
+        new.append(i)
+    else:
+        break
+
+print(new)
 
 
 #ValueError: invalid literal for int() with base 10: 'ds'
 
-# try:
-#     x = int(input("Enter Number : "))
-#     y = int(input("Enter Number : "))
-# except:
-#     print("Enter Interger Value")
-# else:
-#     print("Sum :", x + y)
-# finally:
-#     print("End of Current Code")
-#
-# print('--------------------')
-#
-# a = 2
-# b = 4
-# print(a+b)
+try:
+    x = int(input("Enter Number : "))
+    y = int(input("Enter Number : "))
+except:
+    print("Enter Interger Value")
+else:
+    print("Sum :", x + y)
+finally:
+    print("End of Current Code")
 
+print('--------------------')
+
+a = 2
+b = 4
+print(a+b)
+
+
+#TASK FIVE: FILE HANDLING AND EXCEPTION HANDLING
 
 #1.Write a program in Python to allow the error of syntax to go in exception. HINT: use SyntaxError
 
@@ -78,6 +77,7 @@ while True:
         print("Please Enter Interger Value")
 
 
+        
 #4. Create a login page backend to ask user to enter the UserEmail and password.
 # Make sure to ask Re-Type Password and if the password is incorrect give chance to enter it again but it should not be more than 3 times.
 
@@ -94,6 +94,8 @@ while count < 3:
         print('Access denied. Try again.')
         count += 1
 
+        
+        
 #6. Read any file using Python File handling concept and return only the even length string from the doc.txt file.
 
 f = open("doc.txt","w")
