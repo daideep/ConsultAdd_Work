@@ -46,9 +46,21 @@ str = "ConsultAdd TraininG"
 
 # print(upper)
 
-upper =[c for c in str if c.isupper()]
+upper = [c for c in str if c.isupper()]
 
 print(','.join(upper))
 
-print('-------------')
+
+#4. Write a program to construct a dictionary from the two lists containing the names of students and their corresponding subjects.
+# The dictionary should maps the students with their respective subjects. Let’s see how to do this using for loops and
+# dictionary comprehension. HINT-Use Zip function also
+
+Student = ['Smit', 'Jaya', 'Rayyan']
+capital = ['CSE', 'Networking', 'Operating System']
+
+d = {k:v for k,v in zip(Student,capital)}
+
+print(d)
+
+
 
