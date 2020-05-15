@@ -50,5 +50,5 @@ upper =[c for c in str if c.isupper()]
 
 print(','.join(upper))
 
-
+print('-------------')
 
