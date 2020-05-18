@@ -6,32 +6,20 @@
 # C is 50. H is 30.
 # D is the variable whose values should be input to your program in a comma-separated sequence.
 
-# import math
-# c=50
-# h=30
-# value = []
-#
-# items = [x for x in input("Enter Value :").split(",")]
-# #print(items)
-#
-# for d in items:
-#     value.append(str((int(round(math.sqrt(2*c*float(d)/h))))))
-#
-# #print(value)
-# print(','.join(value))
+import math
+c=50
+h=30
+value = []
 
-# Ds = []
-# result =[]
-# Dv=input("enter the value of D\n")
-# Ds=Dv.split(",")
-# Ds = [int(i) for i in Ds]
-# i=0
-# l = len(Ds)
-# while(i<l):
-#     Q = round(math.sqrt((2*C*Ds[i])/H))
-#     result.append(Q)
-#     i+=1
-# print("output=",result)
+items = [x for x in input("Enter Value :").split(",")]
+#print(items)
+
+for d in items:
+    value.append(str((int(round(math.sqrt(2*c*float(d)/h))))))
+
+#print(value)
+print(','.join(value))
+
 
 
 #2. Define a class named Shape and its subclass Square. The Square class has an init function which takes a length as argument.
